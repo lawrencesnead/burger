@@ -5,10 +5,10 @@
   <div class="col-5">
     <h2 class="text-center">Delicious Burgers, Waiting to be Devoured!</h2>
     <ul>
-      {{#each burger}}
+      {{#each burgers}}
         {{#unless devoured}}
           <li>
-          {{name}}
+          {{> burger-block}}
           <button type="button" class="btn btn-light devour float-right" data-id="{{id}}"> Devour!</button>
                 </li> 
         {{/unless}}
@@ -20,9 +20,9 @@
     <h2 class="text-center">Devoured Burgers!</h2>
 
     <ul>
-      {{#each burger}}
+      {{#each burgers}}
         {{#if devoured}}
-          {{name}}
+          {{> burger-block}}
         {{/if}}
       {{/each}}
     </ul>
