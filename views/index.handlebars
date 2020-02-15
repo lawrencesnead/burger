@@ -1,4 +1,4 @@
-<h1>Eat-Da-Burger!</h1>
+<h1 class="text-center">Eat-Da-Burger!</h1>
 
 
 <div class="row justify-content-center">
@@ -8,7 +8,7 @@
       {{#each burger}}
         {{#unless devoured}}
           <li>
-          {{burger_name}}
+          {{name}}
           <button type="button" class="btn btn-light devour float-right" data-id="{{id}}"> Devour!</button>
                 </li> 
         {{/unless}}
@@ -22,14 +22,14 @@
     <ul>
       {{#each burger}}
         {{#if devoured}}
-          {{burger_name}}
+          {{name}}
         {{/if}}
       {{/each}}
     </ul>
   </div>
 </div>
 <div class="text-center">
-  <h2>Add a Burger</h2>
+  <h5>Add a Burger</h5>
   <form class="create-form">
 
     <div class="form-group">
