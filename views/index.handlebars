@@ -7,10 +7,7 @@
     <ul>
       {{#each burgers}}
         {{#unless devoured}}
-          <li>
           {{> burger-block}}
-          {{!-- <button type="button" class="btn btn-light devour float-right" data-id="{{id}}"> Devour!</button> --}}
-                </li> 
         {{/unless}}
       {{/each}}
     </ul>
